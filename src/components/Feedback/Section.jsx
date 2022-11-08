@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 const Title = styled.h2`
     :first-letter{text-transform: capitalize;}
 `;

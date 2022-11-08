@@ -4,8 +4,6 @@ import { Statistics } from './Statistics';
 import { Section } from './Section';
 import { Notification } from './Notification';
 
-
-
 class FeedbackCounter extends React.Component{
      
 state = {
