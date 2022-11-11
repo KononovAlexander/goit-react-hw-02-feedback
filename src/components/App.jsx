@@ -3,17 +3,17 @@ import { Notification } from './Feedback/Notification';
 import { Section } from './Feedback/Section';
 import { Statistics } from './Feedback/Statistics';
 import { FeedbackOptions } from './Feedback/FeedbackOptions';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
 
-// const Container = styled.div`
-//       height: '100vh',
-//       display: 'flex',
-//       justifyContent: 'center',
-//       alignItems: 'center',
-//       fontSize: 40,
-//       color: '#010101'
-// `
+const Container = styled.div`
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      color: #010101;
+`
 
 
 export class App extends React.Component  {
@@ -40,16 +40,7 @@ export class App extends React.Component  {
 
     const total = good + neutral + bad
     const percentage =  Math.round((100 * good) / total)
-  return(<div
-        style={{
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          fontSize: 40,
-          color: '#010101'
-        }}
-        >
+  return(<Container>
           <div>
            
 
@@ -72,6 +63,6 @@ export class App extends React.Component  {
               </div>
 
                                 
-      </div>)
+      </Container>)
   }
 }
